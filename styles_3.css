@@ -1,0 +1,361 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* 最上面的導覽列 */
+header {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 30px;
+
+}
+
+.navbar {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.logotype {
+
+    margin-top: 6.9px;
+    margin-bottom: 6.5px;
+
+}
+
+.logotype img {
+    width: 210px;
+    height: 40px;
+}
+
+.info {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.menu {
+    /* outline: auto; */
+    display: flex;
+    margin-right: 80px;
+    width: 215px;
+    justify-content: space-between;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #3F5D45;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.banner {
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+/* 中間區域 */
+.content {
+    width: 940px;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/* 甜點內容-左邊的清單列 */
+.list {
+    margin-right: 20px;
+}
+
+.list p {
+    width: 300px;
+    background: #3F5D45;
+    color: #EAF0ED;
+    font-size: 24px;
+    text-align: center;
+    padding: 16px 102px 16px 102px;
+    letter-spacing: 0px;
+
+}
+
+.list a {
+    width: 300px;
+    display: block;
+    text-decoration: none;
+    color: #3F5D45;
+    font-size: 24px;
+    text-align: center;
+    padding: 16px 64px 16px 64px;
+    border: 1px solid #EAF0ED;
+    letter-spacing: 0px;
+
+}
+
+.list a:hover {
+    background: #EAF0ED;
+}
+
+.snack_area {
+    display: flex;
+}
+
+.snack_item_left {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.snack_item_right {
+
+    margin-bottom: 20px;
+}
+
+.snack_info {
+    width: 300px;
+    display: flex;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+}
+
+.snack_name p {
+    width: 173px;
+    font-size: 20px;
+    color: #3F5D45;
+    text-align: left;
+    padding: 14px 33px;
+}
+
+.snack_price {
+    width: 127px;
+    font-size: 20px;
+    color: #3F5D45;
+    text-align: center;
+    padding: 14px 20px 14px 25px;
+
+}
+
+.snack_add a {
+    display: block;
+    width: 300px;
+    color: #3F5D45;
+    background: #EAF0ED;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px 90px;
+}
+
+.collect {
+    position: relative;
+}
+
+.favorite {
+    position: absolute;
+    left: 258px;
+    right: 22px;
+    top: 19px;
+}
+
+.top {
+    width: 36px;
+    position: absolute;
+    left: 20px;
+    right: 244px;
+    top: 0px;
+}
+
+.top p {
+    background: #3F5D45;
+    font-size: 16px;
+    text-align: center;
+    color: #EAF0ED;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 10.08px 10px 9.24px 10px;
+}
+@media (max-width :768px) 
+{
+    #color-id{
+        color: black;
+    }
+}
+
+@media (max-width :576px) 
+{
+    #color-class{
+        color: red;
+    }
+}
+.div{
+    color: yellow;
+}
+.container{
+    /* 在寫響應式的時候會寫max-width */
+    /* 名稱跟內容是相呼應的 */
+    /*container裡面通常都放跟容器相關的屬性 */
+    max-width: 1120px;
+    margin: 0 auto;
+    /* 左右留空隙 */
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.container{
+    /* 中間的版通常介於960~1440
+    通常不會開到1920的版(滿版) */
+    width: 1088px;
+    padding: 0 20PX;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
